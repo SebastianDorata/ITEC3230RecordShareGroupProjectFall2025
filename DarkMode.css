@@ -1,0 +1,154 @@
+
+
+.theme-toggle {
+    position: absolute;
+    top: 20px !important;
+    right: 20px !important;
+    z-index: 2 !important;
+}
+/* The switch container */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+/* The circle inside */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+/* When checked, change background color */
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+/* Move the circle to the right when checked */
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Icon styling */
+.sun-icon,
+.moon-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: opacity 0.4s, visibility 0.4s;
+    pointer-events: none;
+    width: 16px;
+    height: 16px;
+}
+
+/* Sun icon on the left */
+.sun-icon {
+    left: 8px;
+}
+
+/* Moon icon on the right */
+.moon-icon {
+    right: 8px;
+}
+
+/* Hide sun icon when dark mode is active (checked) */
+input:checked + .slider .sun-icon {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Hide moon icon when light mode is active (unchecked) */
+input:not(:checked) + .slider .moon-icon {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+
+/* Dark Mode Styles for Cart */
+[data-bs-theme="dark"] .cart-item {
+    border-bottom-color: #495057;
+    background-color: #212529;
+    color: #f8f9fa;
+}
+
+[data-bs-theme="dark"] .cart-item p {
+    color: #adb5bd;
+}
+
+[data-bs-theme="dark"] .quantity-btn {
+    background-color: #f8f9fa !important;
+    border-color: #dee2e6 !important;
+    color: #000000 !important;
+    font-weight: bold;
+}
+
+[data-bs-theme="dark"] .quantity-btn:hover {
+    background-color: #e9ecef !important;
+    border-color: #adb5bd !important;
+    color: #000000 !important;
+}
+
+/* Quantity number adapts to theme */
+.quantity {
+    color: #000000;
+    font-weight: bold;
+}
+
+[data-bs-theme="dark"] .quantity {
+    color: #ffffff !important;
+    font-weight: bold;
+}
+
+[data-bs-theme="dark"] .price {
+    color: #f8f9fa;
+}
+
+[data-bs-theme="dark"] .delete-btn {
+    background-color: #dc3545;
+    color: #f8f9fa;
+}
+
+[data-bs-theme="dark"] .delete-btn:hover {
+    background-color: #bb2d3b;
+}
+
+/* Dark mode for empty cart message */
+[data-bs-theme="dark"] .empty-cart {
+    color: #f8f9fa;
+}
+
+[data-bs-theme="dark"] .empty-cart-icon {
+    color: #adb5bd;
+}

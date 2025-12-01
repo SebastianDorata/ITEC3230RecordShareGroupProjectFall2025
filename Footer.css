@@ -1,0 +1,154 @@
+/* Footer Styles */
+.site-footer {
+    background-color: var(--bs-secondary-bg);
+    color: var(--bs-body-color);
+    padding: 3rem 0 1rem;
+    margin-top: 4rem;
+    border-top: 1px solid var(--bs-border-color);
+}
+
+body {
+    min-height: 100vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Make main content area grow to push footer down */
+.container.py-5 {
+    flex: 1;
+}
+
+.footer-section {
+    margin-bottom: 2rem;
+}
+
+.footer-section h5 {
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: var(--bs-emphasis-color);
+}
+
+.footer-section p {
+    line-height: 1.6;
+    color: var(--bs-secondary-color);
+}
+
+/* Footer Links */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.75rem;
+}
+
+.footer-links a {
+    color: var(--bs-body-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--bs-primary);
+    text-decoration: underline;
+}
+
+/* Footer Contact */
+.footer-contact {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+}
+
+.footer-contact li {
+    margin-bottom: 0.75rem;
+    color: var(--bs-secondary-color);
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links a {
+    color: var(--bs-body-color);
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links a:hover {
+    color: var(--bs-primary);
+    transform: translateY(-3px);
+}
+
+.social-links svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.footer-bottom hr {
+    margin-bottom: 1.5rem;
+    opacity: 0.1;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: var(--bs-secondary-color);
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .site-footer {
+        padding: 2rem 0 1rem;
+    }
+
+    .footer-section {
+        text-align: center;
+        margin-bottom: 2.5rem;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}
+
+/* Footer Contact */
+.footer-contact {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+}
+
+.footer-contact li {
+    margin-bottom: 0.75rem;
+    color: var(--bs-secondary-color);
+}
+
+/* Style the contact link like Quick Links */
+.footer-contact a {
+    color: var(--bs-body-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+.footer-contact a:hover {
+    color: var(--bs-primary);
+    text-decoration: underline;
+
+}
