@@ -1,0 +1,61 @@
+1. Usage Scenarios
+Scenario 1: Purchasing a Specific Vinyl Record (Collector/Buyer)
+User: Alex, a collector who knows they want a specific version of a rare vinyl album.
+Goal: Find and purchase a vinyl record of a specific release version and in good condition for a fair price.
+Steps:
+Alex logs into their RecordShare account.
+
+They use the Search bar to type in the album name and select the "MUSIC" category.
+On the search results page, they use filters like the price range slider or genre categories to refine the results.
+
+They view in-depth details of a filtered listing, checking the condition and release version of the product.
+
+Satisfied with the condition and price, Alex clicks "Add to Cart".
+
+Alex navigates to the cart (which shows "0 items - C$0.00" until updated) and clicks "Buy Item" (initiating the checkout process).
+
+They confirm their contact and shipping information during checkout and proceed to Make Payment.
+
+After payment, Alex checks the Track Orders page to view the updates on their purchase.
+ 
+Scenario 2: Selling an Extra Copy of a Video Game (Seller)
+User: Maya, a casual seller who wants to offload an extra copy of a video game they own.
+
+Goal: List and track the sale of a physical video game.
+
+Steps:
+Maya logs into her RecordShare account.
+She navigates to the "Sell Items" section and clicks "Add Products" (Create listings).
+
+She fills out the listing form, including the product name, condition, price, and uploads photos of the physical game.
+
+Maya clicks "Submit" to create the new listing.
+
+Later, when the item sells, she receives a notification.
+
+She navigates to "Track Orders" to view the order and update the delivery status once she has shipped the game.
+
+She updates her account profile with her latest Products Sold count and a short Bio.
+
+2. Hierarchical Task Analysis (HTA)
+Goal: Purchase Physical Media
+P0: Purchase Physical Media
+1.  Find Item
+1.1  Log in to RecordShare.
+1.2  Search for item (by name or use filters).
+1.3  Review search results.
+1.4  View item details (condition, release version, price).
+1.5  Add item to the Cart.
+2.  Checkout & Pay
+2.1  Access the Cart.
+2.2  Review and edit cart items.
+2.3  Select "Buy Item" / "Proceed To Payment".2.4 Enter/confirm shipping/contact information.
+2.5 Make Payment.
+3.  Follow Up
+3.1  Track Order.
+3.2  (Optional) Add Review for the purchased listing.
+Plan 0:
+Do 1.1 → 1.2 → 1.3 → 1.4. If satisfied with the item, do 1.5.
+Then proceed to 2.1 → 2.2 → 2.3 → 2.4 → 2.5.
+Finally, do 3.1 → 3.2 (optional).
+
